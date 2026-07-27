@@ -216,6 +216,26 @@ a { color: inherit; text-decoration: none; }
 }
 .project:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .project:hover::before { transform: scaleX(1); }
+/* project architecture diagrams */
+.project__diagram {
+  margin-bottom: 18px; border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px 12px; background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+  overflow-x: auto;
+}
+.project__diagram svg { width: 100%; min-width: 300px; height: auto; display: block; }
+.dg-node { fill: var(--accent-soft); stroke: var(--border); stroke-width: 1; }
+.dg-hero { fill: var(--accent-deep); stroke: var(--accent-deep); }
+:root[data-theme="dark"] .dg-hero { fill: var(--accent); stroke: var(--accent); }
+.dg { text-anchor: middle; }
+.dg-t1 { fill: var(--accent-deep); font-size: 12px; font-weight: 600; }
+.dg-t2 { fill: var(--text-mute); font-size: 9.5px; font-weight: 500; }
+.dg-hero-t1 { fill: #fff; font-size: 12px; font-weight: 600; }
+.dg-hero-t2 { fill: rgba(255,255,255,.82); font-size: 9.5px; font-weight: 500; }
+:root[data-theme="dark"] .dg-hero-t1 { fill: #071018; }
+:root[data-theme="dark"] .dg-hero-t2 { fill: rgba(7,16,24,.75); }
+.dg-arrow { stroke: var(--text-mute); stroke-width: 1.5; fill: none; }
+.dg-arrow-head { fill: var(--text-mute); }
+
 .project__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 12px; }
 .project__head h3 { font-size: 1.16rem; letter-spacing: -.01em; }
 .project__date { font-family: var(--mono); font-size: .74rem; color: var(--text-mute); white-space: nowrap; }
