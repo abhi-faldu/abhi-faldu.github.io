@@ -127,6 +127,10 @@
     });
     const code = document.getElementById('langCode');
     if (code) code.textContent = currentLang.toUpperCase();
+    const cvFile = currentLang === 'de'
+      ? 'assets/Lebenslauf_Abhi_Faldu.pdf'
+      : 'assets/Resume_Abhi_Faldu.pdf';
+    document.querySelectorAll('.js-cv').forEach((a) => a.setAttribute('href', cvFile));
     localStorage.setItem('lang', currentLang);
   };
 
