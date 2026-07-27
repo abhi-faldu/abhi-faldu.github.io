@@ -115,6 +115,12 @@ a { color: inherit; text-decoration: none; }
 .btn--ghost { background: transparent; border-color: var(--border); color: var(--text); }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
 .btn--lg { padding: 16px 34px; font-size: 1.05rem; }
+.btn--copy { gap: 10px; }
+.btn--copy .ico-check { display: none; }
+.btn--copy.copied { background: #1e8e5a; border-color: #1e8e5a; color: #fff; }
+:root[data-theme="dark"] .btn--copy.copied { background: #2ecc71; border-color: #2ecc71; color: #071018; }
+.btn--copy.copied .ico-copy { display: none; }
+.btn--copy.copied .ico-check { display: inline; }
 
 /* ───────────── HERO ───────────── */
 .hero { padding: 72px 0 40px; position: relative; }

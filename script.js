@@ -110,6 +110,37 @@
   );
   sections.forEach((s) => spy.observe(s));
 
+  /* ── Copy email to clipboard ── */
+  const copyBtn = document.getElementById('copyEmail');
+  if (copyBtn) {
+    const label = copyBtn.querySelector('.copy-label');
+    const original = label.textContent;
+    let resetTimer;
+    copyBtn.addEventListener('click', async () => {
+      const email = copyBtn.dataset.email;
+      try {
+        await navigator.clipboard.writeText(email);
+      } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = email;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try { document.execCommand('copy'); } catch (_) {}
+        ta.remove();
+      }
+      copyBtn.classList.add('copied');
+      label.textContent = 'Copied to clipboard!';
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        label.textContent = original;
+      }, 1900);
+    });
+  }
+
   /* ── Footer year ── */
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
