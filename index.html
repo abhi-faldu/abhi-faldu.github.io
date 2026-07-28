@@ -257,9 +257,14 @@
             <ul class="tags tags--sm">
               <li>MLflow</li><li>XGBoost</li><li>FastAPI</li><li>Evidently</li><li>Docker</li>
             </ul>
-            <a class="project__link" href="https://github.com/abhi-faldu/anomaly-detection-MLops" target="_blank" rel="noopener" data-i18n="proj_github">
-              View on GitHub →
-            </a>
+            <div class="project__actions">
+              <button class="project__link project__link--video" type="button" data-video="assets/anomaly-detection-mlops.mp4" data-video-poster="assets/anomaly-detection-mlops-poster.jpg" data-video-title="MLOps Pipeline for Predictive Maintenance" data-i18n="proj_watch">
+                ▶ Watch demo
+              </button>
+              <a class="project__link" href="https://github.com/abhi-faldu/anomaly-detection-MLops" target="_blank" rel="noopener" data-i18n="proj_github">
+                View on GitHub →
+              </a>
+            </div>
           </article>
 
           <!-- Project 2 -->
@@ -299,9 +304,14 @@
             <ul class="tags tags--sm">
               <li>MQTT</li><li>InfluxDB</li><li>Grafana</li><li>Docker</li>
             </ul>
-            <a class="project__link" href="https://github.com/abhi-faldu/iiot-smart-factory-sim" target="_blank" rel="noopener" data-i18n="proj_github">
-              View on GitHub →
-            </a>
+            <div class="project__actions">
+              <button class="project__link project__link--video" type="button" data-video="assets/iiot-smart-factory-sim.mp4" data-video-title="IIoT Simulator for Smart-Factory Monitoring" data-i18n="proj_watch">
+                ▶ Watch demo
+              </button>
+              <a class="project__link" href="https://github.com/abhi-faldu/iiot-smart-factory-sim" target="_blank" rel="noopener" data-i18n="proj_github">
+                View on GitHub →
+              </a>
+            </div>
           </article>
 
           <!-- Project 3 -->
@@ -338,7 +348,7 @@
               <li>PyTorch</li><li>LSTM</li><li>Streamlit</li><li>FastAPI</li>
             </ul>
             <div class="project__actions">
-              <button class="project__link project__link--video" type="button" data-video="assets/bearing-pdm-demo.mp4" data-video-title="Predictive Maintenance for Robotic Bearings" data-i18n="proj_watch">
+              <button class="project__link project__link--video" type="button" data-video="assets/bearing-pdm-demo.mp4" data-video-poster="assets/bearing-pdm-poster.jpg" data-video-title="Predictive Maintenance for Robotic Bearings" data-i18n="proj_watch">
                 ▶ Watch demo
               </button>
               <a class="project__link" href="https://github.com/abhi-faldu/robotic-bearing-pdm" target="_blank" rel="noopener" data-i18n="proj_github">
@@ -383,9 +393,14 @@
             <ul class="tags tags--sm">
               <li>Python</li><li>Pandas</li><li>Backtesting</li><li>Risk Mgmt</li>
             </ul>
-            <a class="project__link" href="https://github.com/abhi-faldu/ml-bot" target="_blank" rel="noopener" data-i18n="proj_github">
-              View on GitHub →
-            </a>
+            <div class="project__actions">
+              <button class="project__link project__link--video" type="button" data-video="assets/ml-bot.mp4" data-video-title="ML-Based Crypto Trading System" data-i18n="proj_watch">
+                ▶ Watch demo
+              </button>
+              <a class="project__link" href="https://github.com/abhi-faldu/ml-bot" target="_blank" rel="noopener" data-i18n="proj_github">
+                View on GitHub →
+              </a>
+            </div>
           </article>
         </div>
 
@@ -475,7 +490,7 @@
     <div class="vmodal__dialog" role="dialog" aria-modal="true" aria-label="Project demo video">
       <button class="vmodal__close" type="button" data-video-close aria-label="Close video">✕</button>
       <h3 class="vmodal__title" id="video-modal-title"></h3>
-      <video class="vmodal__video" id="video-modal-player" controls preload="none" playsinline poster="assets/bearing-pdm-poster.jpg"></video>
+      <video class="vmodal__video" id="video-modal-player" controls preload="metadata" playsinline></video>
     </div>
   </div>
 

@@ -274,9 +274,11 @@
     const titleEl = modal.querySelector('#video-modal-title');
     let lastFocused = null;
 
-    function open(src, title) {
+    function open(src, title, poster) {
       lastFocused = document.activeElement;
       titleEl.textContent = title || '';
+      if (poster) player.setAttribute('poster', poster);
+      else player.removeAttribute('poster');
       player.src = src;
       modal.classList.add('open');
       modal.setAttribute('aria-hidden', 'false');
@@ -295,7 +297,14 @@
     }
 
     document.querySelectorAll('[data-video]').forEach((btn) => {
-      btn.addEventListener('click', () => open(btn.dataset.video, btn.dataset.videoTitle));
+      btn.addEventListener('click', () =>
+        open(btn.dataset.video, btn.dataset.videoTitle, btn.dataset.videoPoster)
+      );
+      // Graceful guard: hide the button until its video file is actually present.
+      // Lets new explainer videos light up automatically once dropped into assets/.
+      fetch(btn.dataset.video, { method: 'HEAD' })
+        .then((res) => { if (!res.ok) btn.hidden = true; })
+        .catch(() => { btn.hidden = true; });
     });
     modal.querySelectorAll('[data-video-close]').forEach((el) => {
       el.addEventListener('click', close);
