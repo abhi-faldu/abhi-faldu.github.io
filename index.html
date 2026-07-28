@@ -337,9 +337,14 @@
             <ul class="tags tags--sm">
               <li>PyTorch</li><li>LSTM</li><li>Streamlit</li><li>FastAPI</li>
             </ul>
-            <a class="project__link" href="https://github.com/abhi-faldu/robotic-bearing-pdm" target="_blank" rel="noopener" data-i18n="proj_github">
-              View on GitHub →
-            </a>
+            <div class="project__actions">
+              <button class="project__link project__link--video" type="button" data-video="assets/bearing-pdm-demo.mp4" data-video-title="Predictive Maintenance for Robotic Bearings" data-i18n="proj_watch">
+                ▶ Watch demo
+              </button>
+              <a class="project__link" href="https://github.com/abhi-faldu/robotic-bearing-pdm" target="_blank" rel="noopener" data-i18n="proj_github">
+                View on GitHub →
+              </a>
+            </div>
           </article>
 
           <!-- Project 4 -->
@@ -463,6 +468,16 @@
       <p>© <span id="year">2026</span> Abhi Faldu · <span data-i18n="footer_loc">Rosenheim, Germany</span></p>
     </div>
   </footer>
+
+  <!-- Video modal -->
+  <div class="vmodal" id="video-modal" aria-hidden="true">
+    <div class="vmodal__backdrop" data-video-close></div>
+    <div class="vmodal__dialog" role="dialog" aria-modal="true" aria-label="Project demo video">
+      <button class="vmodal__close" type="button" data-video-close aria-label="Close video">✕</button>
+      <h3 class="vmodal__title" id="video-modal-title"></h3>
+      <video class="vmodal__video" id="video-modal-player" controls preload="none" playsinline></video>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

@@ -84,6 +84,7 @@
     proj4_p2:    { en: 'Deployed on Binance Testnet — honestly documented <strong>50% out-of-sample accuracy</strong>: public market features carried no real predictive edge.', de: 'Auf Binance Testnet bereitgestellt — ehrlich dokumentierte <strong>50 % OOS-Genauigkeit</strong>: öffentliche Marktfeatures ohne echte Vorhersagekraft.' },
 
     proj_github:   { en: 'View on GitHub →', de: 'Auf GitHub ansehen →' },
+    proj_watch:    { en: '▶ Watch demo', de: '▶ Demo ansehen' },
     projects_more: { en: 'See all on GitHub →', de: 'Alle auf GitHub ansehen →' },
 
     exp_kicker: { en: '04 — Experience & Education', de: '04 — Erfahrung & Bildung' },
@@ -264,6 +265,45 @@
       }, 1900);
     });
   }
+
+  /* ── Video modal ── */
+  (function () {
+    const modal = document.getElementById('video-modal');
+    if (!modal) return;
+    const player = modal.querySelector('#video-modal-player');
+    const titleEl = modal.querySelector('#video-modal-title');
+    let lastFocused = null;
+
+    function open(src, title) {
+      lastFocused = document.activeElement;
+      titleEl.textContent = title || '';
+      player.src = src;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      const p = player.play();
+      if (p && p.catch) p.catch(() => {});
+    }
+    function close() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      player.pause();
+      player.removeAttribute('src');
+      player.load();
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    document.querySelectorAll('[data-video]').forEach((btn) => {
+      btn.addEventListener('click', () => open(btn.dataset.video, btn.dataset.videoTitle));
+    });
+    modal.querySelectorAll('[data-video-close]').forEach((el) => {
+      el.addEventListener('click', close);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) close();
+    });
+  })();
 
   /* ── Footer year ── */
   document.getElementById('year').textContent = new Date().getFullYear();
