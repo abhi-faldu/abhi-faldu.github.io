@@ -6,10 +6,9 @@
 
   const root = document.documentElement;
 
-  /* ── Theme: respect stored choice, else system preference ── */
+  /* ── Theme: default to light/day mode; respect a returning visitor's saved choice ── */
   const stored = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  root.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
+  root.setAttribute('data-theme', stored || 'light');
 
   const toggle = document.getElementById('themeToggle');
   toggle.addEventListener('click', () => {
