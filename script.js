@@ -25,7 +25,7 @@
     nav_experience: { en: 'Experience', de: 'Erfahrung' },
     nav_contact:    { en: 'Contact', de: 'Kontakt' },
 
-    hero_eyebrow: { en: 'Applied AI Student · Rosenheim, Germany', de: 'KI-Student · Rosenheim, Deutschland' },
+    hero_eyebrow: { en: 'Digital Technology & Management Student · Weiden, Germany', de: 'Student Digital Technology & Management · Weiden, Deutschland' },
     hero_title:   { en: 'Hi, I\'m <span class="grad">Abhi Faldu</span>.<br />I build industrial AI systems.', de: 'Hallo, ich bin <span class="grad">Abhi Faldu</span>.<br />Ich entwickle industrielle KI-Systeme.' },
     hero_sub:     { en: 'From anomaly detection in machine sensor data through real-time IIoT monitoring to production-ready MLOps pipelines. I turn messy signals into models that ship — with Python, PyTorch, MLflow and Docker.', de: 'Von der Anomalieerkennung in Maschinensensordaten über IIoT-Echtzeit-Monitoring bis zu produktionsreifen MLOps-Pipelines. Ich mache aus verrauschten Signalen Modelle, die in Produktion laufen — mit Python, PyTorch, MLflow und Docker.' },
     hero_cta_projects: { en: 'View Projects', de: 'Projekte ansehen' },
@@ -34,17 +34,17 @@
     stat_1: { en: 'Production ML projects', de: 'Produktions-ML-Projekte' },
     stat_2: { en: 'Best F1-score (bearing PdM)', de: 'Bester F1-Score (Lager-PdM)' },
     stat_3: { en: 'Test coverage on MLOps pipeline', de: 'Testabdeckung der MLOps-Pipeline' },
-    stat_4: { en: 'Semester, B.Sc. Applied AI', de: 'Semester, B.Sc. Angewandte KI' },
+    stat_4: { en: 'Semesters of AI & ML coursework', de: 'Semester KI- & ML-Studium' },
 
     about_kicker: { en: '01 — About', de: '01 — Über mich' },
     about_title:  { en: 'Turning sensor noise into decisions', de: 'Aus Sensorrauschen werden Entscheidungen' },
-    about_p1: { en: 'I\'m an <strong>Applied Artificial Intelligence</strong> student at Technische Hochschule Rosenheim, currently in my 6th semester. My hands-on work spans the full lifecycle of industrial AI — from anomaly detection in machine sensor data, through real-time IIoT monitoring, to production-ready MLOps pipelines.', de: 'Ich studiere <strong>Angewandte Künstliche Intelligenz</strong> an der Technischen Hochschule Rosenheim, aktuell im 6. Semester. Meine praktische Arbeit umfasst den gesamten Lebenszyklus industrieller KI — von der Anomalieerkennung in Maschinensensordaten über IIoT-Echtzeit-Monitoring bis zu produktionsreifen MLOps-Pipelines.' },
-    about_p2: { en: 'I like problems where the data is messy, the constraints are real, and the model has to actually run in production. I care about experiment tracking, drift monitoring, tests, and clean deployment — not just a notebook that scores well once.', de: 'Mich reizen Probleme, bei denen die Daten unsauber sind, die Rahmenbedingungen real und das Modell tatsächlich in Produktion laufen muss. Mir sind Experiment-Tracking, Drift-Überwachung, Tests und sauberes Deployment wichtig — nicht nur ein Notebook, das einmal gut abschneidet.' },
+    about_p1: { en: 'I\'m a <strong>Digital Technology and Management</strong> student at OTH Amberg-Weiden, Weiden campus — an English-taught programme I moved into after six semesters of Applied Artificial Intelligence at TH Rosenheim. It pairs the engineering and IT depth I already have with the product and management side of industrial technology.', de: 'Ich studiere <strong>Digital Technology and Management</strong> an der OTH Amberg-Weiden am Campus Weiden — ein englischsprachiger Studiengang, in den ich nach sechs Semestern Angewandte Künstliche Intelligenz an der TH Rosenheim gewechselt bin. Er verbindet meine vorhandene Tiefe in Technik und IT mit der Produkt- und Management-Seite industrieller Technologie.' },
+    about_p2: { en: 'My hands-on work spans the full lifecycle of industrial AI — from anomaly detection in machine sensor data, through real-time IIoT monitoring, to production-ready MLOps pipelines. I like problems where the data is messy, the constraints are real, and the model has to actually run in production: experiment tracking, drift monitoring, tests, clean deployment — not just a notebook that scores well once.', de: 'Meine praktische Arbeit umfasst den gesamten Lebenszyklus industrieller KI — von der Anomalieerkennung in Maschinensensordaten über IIoT-Echtzeit-Monitoring bis zu produktionsreifen MLOps-Pipelines. Mich reizen Probleme, bei denen die Daten unsauber sind, die Rahmenbedingungen real und das Modell tatsächlich in Produktion laufen muss: Experiment-Tracking, Drift-Überwachung, Tests, sauberes Deployment — nicht nur ein Notebook, das einmal gut abschneidet.' },
     about_p3: { en: 'Before Germany, I worked as a Junior Data Analyst in India, building Power BI dashboards and EDA pipelines. I\'m ready to contribute practical solutions in an AI or data science team from day one.', de: 'Vor Deutschland war ich als Junior Data Analyst in Indien tätig und habe Power BI-Dashboards und EDA-Pipelines entwickelt. Ich bin bereit, ab dem ersten Tag praxisnahe Lösungen in einem KI- oder Data-Science-Team einzubringen.' },
 
-    fact_1a: { en: 'B.Sc. Applied AI', de: 'B.Sc. Angewandte KI' },
-    fact_1b: { en: 'TH Rosenheim · 6th sem', de: 'TH Rosenheim · 6. Sem.' },
-    fact_2a: { en: 'Rosenheim, Germany', de: 'Rosenheim, Deutschland' },
+    fact_1a: { en: 'B.Sc. Digital Tech & Management', de: 'B.Sc. Digital Tech & Management' },
+    fact_1b: { en: 'OTH Amberg-Weiden · 1st sem', de: 'OTH Amberg-Weiden · 1. Sem.' },
+    fact_2a: { en: 'Weiden, Germany', de: 'Weiden, Deutschland' },
     fact_2b: { en: 'Open to relocation', de: 'Umzugsbereit' },
     fact_3a: { en: 'EN C1 · DE B1/B2', de: 'EN C1 · DE B1/B2' },
     fact_3b: { en: 'Hindi / Gujarati native', de: 'Hindi / Gujarati Muttersprache' },
@@ -90,29 +90,34 @@
     exp_title:  { en: 'The path so far', de: 'Mein bisheriger Weg' },
 
     tl1_title: { en: 'Sales Associate — Lidl GmbH & Co. KG', de: 'Verkäufer — Lidl GmbH & Co. KG' },
-    tl1_date:  { en: 'Present', de: 'Aktuell' },
-    tl1_place: { en: 'Prien am Chiemsee, Germany', de: 'Prien am Chiemsee, Deutschland' },
-    tl1_desc:  { en: 'Reliable work in a high-volume retail environment while studying full-time — strong time management and resilience — while building professional German and intercultural teamwork.', de: 'Zuverlässiges Arbeiten in einem umsatzstarken Einzelhandelsumfeld bei gleichzeitigem Vollzeitstudium — starkes Zeitmanagement und Belastbarkeit — bei gleichzeitigem Ausbau professioneller Deutschkenntnisse und interkultureller Teamkompetenz.' },
+    tl1_date:  { en: '11/2025 — Present', de: '11/2025 — Aktuell' },
+    tl1_place: { en: 'Weiden in der Oberpfalz, Germany', de: 'Weiden in der Oberpfalz, Deutschland' },
+    tl1_desc:  { en: 'Reliable work in a high-volume retail environment while studying full-time — strong time management and resilience — while building professional German and intercultural teamwork. Transferred from the Prien am Chiemsee store to Weiden in 10/2026, alongside the move to OTH Amberg-Weiden.', de: 'Zuverlässiges Arbeiten in einem umsatzstarken Einzelhandelsumfeld bei gleichzeitigem Vollzeitstudium — starkes Zeitmanagement und Belastbarkeit — bei gleichzeitigem Ausbau professioneller Deutschkenntnisse und interkultureller Teamkompetenz. Wechsel von der Filiale Prien am Chiemsee nach Weiden im Oktober 2026, parallel zum Studienortwechsel an die OTH Amberg-Weiden.' },
 
-    tl2_title: { en: 'B.Sc. Applied Artificial Intelligence', de: 'B.Sc. Angewandte Künstliche Intelligenz' },
-    tl2_date:  { en: '10/2023 — Present', de: '10/2023 — Aktuell' },
-    tl2_place: { en: 'Technische Hochschule Rosenheim, Germany', de: 'Technische Hochschule Rosenheim, Deutschland' },
-    tl2_desc:  { en: '6th semester. Focus: Machine Learning, Deep Learning, Neural Networks, Data Science, Database Systems, Software Engineering, IT Security.', de: '6. Semester. Schwerpunkte: Machine Learning, Deep Learning, Neuronale Netze, Data Science, Datenbanksysteme, Software Engineering, IT-Sicherheit.' },
+    tl2_title: { en: 'B.Sc. Digital Technology and Management', de: 'B.Sc. Digital Technology and Management' },
+    tl2_date:  { en: '10/2026 — Present', de: '10/2026 — Aktuell' },
+    tl2_place: { en: 'OTH Amberg-Weiden, Weiden Campus, Germany', de: 'OTH Amberg-Weiden, Campus Weiden, Deutschland' },
+    tl2_desc:  { en: '1st semester of a seven-semester, English-taught programme. Focus: mathematics & informatics, digital technology (IoT, sensors, communication), management & industrial engineering, with an integrated practical semester.', de: '1. Semester eines siebensemestrigen, englischsprachigen Studiengangs. Schwerpunkte: Mathematik & Informatik, Digitaltechnik (IoT, Sensorik, Kommunikationstechnik), Management & Wirtschaftsingenieurwesen, mit integriertem Praxissemester.' },
 
-    tl3_title: { en: 'Junior Data Analyst — MR Infoware', de: 'Junior Data Analyst — MR Infoware' },
-    tl3_place: { en: 'Rajkot, India', de: 'Rajkot, Indien' },
-    tl3_desc:  { en: 'End-to-end EDA and data-preprocessing pipelines, Power BI dashboards for KPIs, and support on ML model evaluation — translating business requirements into analytical insight.', de: 'End-to-End-EDA und Datenvorverarbeitungs-Pipelines, Power BI-Dashboards für KPIs und Mitwirkung bei der Bewertung von ML-Modellen — Überführung von Geschäftsanforderungen in analytische Erkenntnisse.' },
+    tl3_title: { en: 'B.Sc. Applied Artificial Intelligence', de: 'B.Sc. Angewandte Künstliche Intelligenz' },
+    tl3_date:  { en: '10/2023 — 09/2026', de: '10/2023 — 09/2026' },
+    tl3_place: { en: 'Technische Hochschule Rosenheim, Germany', de: 'Technische Hochschule Rosenheim, Deutschland' },
+    tl3_desc:  { en: 'Six semesters completed before transferring. Focus: Machine Learning, Deep Learning, Neural Networks, Data Science, Database Systems, Software Engineering, IT Security.', de: 'Sechs Semester vor dem Wechsel absolviert. Schwerpunkte: Machine Learning, Deep Learning, Neuronale Netze, Data Science, Datenbanksysteme, Software Engineering, IT-Sicherheit.' },
 
-    tl4_title: { en: 'B.Tech Information Technology (partial)', de: 'B.Tech Informationstechnologie (Teilstudium)' },
-    tl4_place: { en: 'Atmiya Institute of Technology & Science, Rajkot, India', de: 'Atmiya Institute of Technology & Science, Rajkot, Indien' },
-    tl4_desc:  { en: 'Completed two semesters of foundational engineering studies.', de: 'Zwei Semester ingenieurwissenschaftliches Grundstudium absolviert.' },
+    tl4_title: { en: 'Junior Data Analyst — MR Infoware', de: 'Junior Data Analyst — MR Infoware' },
+    tl4_place: { en: 'Rajkot, India', de: 'Rajkot, Indien' },
+    tl4_desc:  { en: 'End-to-end EDA and data-preprocessing pipelines, Power BI dashboards for KPIs, and support on ML model evaluation — translating business requirements into analytical insight.', de: 'End-to-End-EDA und Datenvorverarbeitungs-Pipelines, Power BI-Dashboards für KPIs und Mitwirkung bei der Bewertung von ML-Modellen — Überführung von Geschäftsanforderungen in analytische Erkenntnisse.' },
+
+    tl5_title: { en: 'B.Tech Information Technology (partial)', de: 'B.Tech Informationstechnologie (Teilstudium)' },
+    tl5_place: { en: 'Atmiya Institute of Technology & Science, Rajkot, India', de: 'Atmiya Institute of Technology & Science, Rajkot, Indien' },
+    tl5_desc:  { en: 'Completed two semesters of foundational engineering studies.', de: 'Zwei Semester ingenieurwissenschaftliches Grundstudium absolviert.' },
 
     contact_kicker: { en: '05 — Contact', de: '05 — Kontakt' },
     contact_title:  { en: 'Let\'s build something', de: 'Bauen wir etwas gemeinsam' },
     contact_lead:   { en: 'I\'m open to <strong>Werkstudent, Praktikum and entry-level AI / Data</strong> roles. The fastest way to reach me is email.', de: 'Ich bin offen für <strong>Werkstudenten-, Praktikums- und Einstiegsstellen im Bereich KI / Data</strong>. Am schnellsten erreichen Sie mich per E-Mail.' },
     contact_cv:     { en: 'CV', de: 'Lebenslauf' },
 
-    footer_loc: { en: 'Rosenheim, Germany', de: 'Rosenheim, Deutschland' },
+    footer_loc: { en: 'Weiden, Germany', de: 'Weiden, Deutschland' },
 
     copy_done: { en: 'Copied to clipboard!', de: 'In Zwischenablage kopiert!' }
   };
