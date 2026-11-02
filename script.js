@@ -62,7 +62,7 @@
     projects_title:  { en: 'Selected work', de: 'Ausgewählte Projekte' },
 
     proj1_title: { en: 'MLOps Pipeline for Predictive Maintenance', de: 'MLOps-Pipeline für prädiktive Instandhaltung' },
-    proj1_date:  { en: '06/2026 — Present', de: '06/2026 — Aktuell' },
+    proj1_date:  { en: '06/2026 — 10/2026', de: '06/2026 — 10/2026' },
     proj1_desc:  { en: 'Production-grade MLOps workflow for a machine-failure classifier (AI4I 2020, ~10,000 sensor records): training, experiment tracking and a model registry in MLflow, with automatic champion promotion.', de: 'Produktionsnaher MLOps-Workflow für einen Maschinenausfall-Klassifikator (AI4I 2020, ca. 10.000 Sensordatensätze): Training, Experiment-Tracking und Modellregistrierung mit MLflow, inkl. automatischer Champion-Promotion.' },
     proj1_p1:    { en: 'Raised PR-AUC with XGBoost from 0.38 baseline to <strong>0.83</strong>; CI enforces PR-AUC ≥ 0.75 before every promotion.', de: 'PR-AUC mit XGBoost von 0,38 (Baseline) auf <strong>0,83</strong> gesteigert; CI erzwingt PR-AUC ≥ 0,75 vor jeder Promotion.' },
     proj1_p2:    { en: 'Deployed via FastAPI, data-drift monitoring with Evidently, containerised with Docker Compose — <strong>38 tests, ~90% coverage</strong>.', de: 'Bereitstellung über FastAPI, Datendrift-Überwachung mit Evidently, containerisiert mit Docker Compose — <strong>38 Tests, ~90 % Coverage</strong>.' },
